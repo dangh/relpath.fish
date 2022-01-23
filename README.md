@@ -1,5 +1,5 @@
 # relpath.fish
-relative path for fish shell
+Relative path for fish shell
 
 ## Installation
 

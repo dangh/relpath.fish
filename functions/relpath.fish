@@ -1,6 +1,6 @@
-function relpath --argument-names source target --description "print target path with relative to source path"
-  set source (string join / -- (string split --no-empty / $source))
-  set target (string join / -- (string split --no-empty / $target))
+function relpath --argument-names source target --description "Print target path with relative to the source path"
+  set source (builtin realpath $source)
+  set target (builtin realpath $target)
   set --local base
   while test -n "$source" -a -n "$target"
     echo $source | read --local --delimiter=/ source_base source_rest
