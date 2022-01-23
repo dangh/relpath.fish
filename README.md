@@ -4,7 +4,7 @@ relative path for fish shell
 ## Installation
 
 ```fish
-fisher add dangh/relpath.fish
+fisher install dangh/relpath.fish
 ```
 
 ## Usage
