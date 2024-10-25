@@ -1,6 +1,6 @@
 function relpath -a source target -d "Print target path with relative to the source path"
-    set source (builtin realpath $source)
-    set target (builtin realpath $target)
+    set source (path resolve $source)
+    set target (path resolve $target)
     set -l base
     while test -n "$source" -a -n "$target"
         echo $source | read -l -d / source_base source_rest
